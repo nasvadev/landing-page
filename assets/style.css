@@ -22,16 +22,16 @@
   --bg-black: black;
 }
 
-body {
-  background-color: var(--bg-white);
-}
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg-dark-gray);
   padding: 10px 50px;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; */
 }
 
 img {
@@ -48,4 +48,75 @@ img {
   color: var(--font-white);
   font-size: 14px;
   font-weight: 200;
+}
+
+.hero {
+  background-color: var(--bg-dark-red);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-text {
+  display: column;
+  align-items: center;
+  max-width: 1000px;
+  padding: 40px 0 40px 100px;
+  max-width: max-content;
+}
+
+.thg {
+  width: 750px;
+  height: 450px;
+  padding: 40px 100px 40px 0;
+}
+
+h1 {
+  color: var(--font-white);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+h1,
+span {
+  font-style: italic;
+}
+
+.hero-text p {
+  color: var(--font-white);
+  font-size: 15px;
+  font-weight: 100px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-buttons,
+button {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hero-write {
+  background-color: black;
+  color: var(--font-white);
+}
+
+.about-text {
+  font-weight: 600;
+  text-align: center;
+  padding: 50px 300px;
+  font-size: 20px;
+  background-color: var(--bg-gold);
 }
