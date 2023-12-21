@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url(@import url ('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -101,6 +101,7 @@ h1 {
   font-size: 15px;
   font-weight: 100;
   max-width: 450px;
+  line-height: 1.5;
 }
 
 .hero-buttons {
@@ -126,6 +127,24 @@ h1 {
   color: var(--font-black);
 }
 
+.hero-write {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-learn-more {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -136,9 +155,10 @@ h1 {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
+  line-height: 1.5;
 }
 
-.about p span {
+.about span {
   font-style: italic;
 }
 
@@ -163,6 +183,36 @@ h1 {
   gap: 70px;
 }
 
+.books img {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.books img:hover {
+  width: 35px;
+}
+
+.movies img {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.movies img:hover {
+  width: 35px;
+}
+
+.music img {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.music img:hover {
+  width: 35px;
+}
+
 .cards-contenido-title-description {
   display: flex;
   flex-direction: column;
@@ -180,6 +230,9 @@ h2 {
   color: var(--font-black);
   font-size: 15px;
   font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+  width: 70%;
   max-width: 850;
 }
 
@@ -188,7 +241,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  line-height: 1.8;
+  line-height: 1.5;
   width: 90%;
 }
 
@@ -323,4 +376,4 @@ hr {
 
 .logo-footer p {
   font-size: 10px;
-}
+};;;;;;;;;;;;;;;;;;
