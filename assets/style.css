@@ -153,6 +153,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 80%;
   max-width: 850;
   padding: 30px 0;
@@ -183,7 +184,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
+  line-height: 1.8;
+  width: 80%;
 }
 
 .cards-contenido-products h3 {
@@ -289,4 +292,24 @@ h2 {
 .phone {
   display: flex;
   gap: 20px;
+}
+
+hr {
+  border-color: var(--bg-light-green);
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.logo-footer img {
+  width: 3%;
+}
+
+.logo-footer p {
+  font-size: 10px;
 }
