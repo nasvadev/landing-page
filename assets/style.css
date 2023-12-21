@@ -70,16 +70,16 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 120px 20px 50px 20px;
+  padding: 120px 20px 30px 20px;
   width: 90%;
-  gap: 30px;
+  gap: 50px;
 }
 
 .hero-presentation {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .thg {
@@ -102,6 +102,7 @@ h1 {
   font-weight: 100;
   max-width: 450px;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .hero-buttons {
@@ -154,7 +155,7 @@ h1 {
   padding: 50px 20px;
   font-size: 20px;
   font-weight: 600;
-  text-align: center;
+  text-align: justify;
   line-height: 1.5;
 }
 
@@ -230,8 +231,8 @@ h2 {
   color: var(--font-black);
   font-size: 15px;
   font-weight: 400;
-  text-align: center;
   line-height: 1.5;
+  text-align: center;
   width: 70%;
   max-width: 850;
 }
@@ -252,6 +253,7 @@ h2 {
 .cards-contenido-products p {
   font-size: 15px;
   font-weight: 400;
+  text-align: justify;
 }
 
 .books {
@@ -292,6 +294,7 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+
 .music span {
   font-weight: 800;
 }
@@ -300,9 +303,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 30px;
+  padding: 40px 0 50px 40px;
   width: 90%;
-  gap: 90px;
+  gap: 10px;
 }
 
 .contact h2 {
@@ -315,14 +318,11 @@ h2 {
   flex-direction: column;
   width: 90%;
   max-width: 850;
-  padding: 20px 0;
-  gap: 50px;
+  gap: 60px;
 }
 
 .contact-info-people {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 55px;
 }
 
@@ -371,9 +371,147 @@ hr {
 }
 
 .logo-footer img {
-  width: 3%;
+  width: 4%;
 }
 
 .logo-footer p {
   font-size: 10px;
+  font-weight: 550;
+}
+
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-presentation {
+    text-align: center
+  }
+
+  .about {
+    width: 80%;
+  }
+
+  .cards-contenido-products {
+ flex-direction: column;
+  }
+
+  .cards-contenido-products h3{
+    width: 80%;
+  }
+
+  .cards-contenido-products p {
+width: 50%;
+}
+
+.contact{
+  width: 80%;
+}
+
+.contact-info {
+  gap: 40px;
+}
+
+  .contact-info-people {
+  flex-direction: column;
+}
+
+}
+
+@media (max-width: 768px) {
+  .about {
+    width: 100%;
+    padding: 0 40px;
+    text-align: justify;
+  }
+
+  .cards-contenido-products {
+ flex-direction: column
+  }
+
+  .cards-contenido-products p {
+width: 80%;
+  }
+
+  .contact{
+    width: 100%;
+    padding: 40px 0 40px 40px;
+  }
+
+}
+
+@media (max-width: 320px) {
+body {
+  width: 100vw;
+}  
+  
+  .hero {
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-left: 150px;
+  }
+
+  .thg{
+    width: 400px;
+  }
+
+  .about{
+    margin-left: 150px;
+width: 150%;
+  }
+
+  .cards{
+    margin-left: 150px;
+    width: 200%
+
+  }
+
+  .cards-contenido p {
+    text-align: justify;
+  }
+
+  .cards-contenido-products {
+ flex-direction: column
+  }
+
+  .cards-contenido-products p {
+width: 80%;
+  }
+
+  .contact{
+flex-direction: column;
+    width: 100%;
+    margin-left: 150px;
+    gap: 50px;
+  }
+
+  .sinsajos{
+    height: 350px;
+  }
+
+  hr {
+width: 500px
+}
+.logo-footer{
+  margin-left: 150px;
+}  
+
+
+  .logo-footer img {
+    width: 20%;
+  }
+  
+  .logo-footer p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
 };
