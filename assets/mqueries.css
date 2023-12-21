@@ -1,0 +1,238 @@
+/* TERMINADO 1024 */
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-presentation {
+    text-align: center;
+  }
+
+  .about {
+    width: 80%;
+  }
+
+  .cards-contenido-products {
+    flex-direction: column;
+  }
+
+  .cards-contenido-products h3 {
+    width: 80%;
+  }
+
+  .cards-contenido-products p {
+    width: 50%;
+  }
+
+  .contact {
+    width: 80%;
+  }
+
+  .contact-info {
+    gap: 40px;
+  }
+
+  .contact-info-people {
+    flex-direction: column;
+  }
+}
+
+/* TERMINADO 1024 */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-presentation {
+    text-align: center;
+  }
+
+  .about {
+    width: 100%;
+    padding: 0 40px;
+    text-align: justify;
+  }
+
+  .cards-contenido-products {
+    flex-direction: column;
+  }
+
+  .cards-contenido-products p {
+    width: 80%;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 40px 0 40px 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    flex-direction: column;
+    margin-left: 45px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .thg {
+    width: 450px;
+  }
+
+  .hero-presentation {
+    text-align: center;
+  }
+
+  .about {
+    width: 90%;
+    margin-left: 50px;
+  }
+
+  .cards {
+    margin-left: 50px;
+  }
+
+  .cards-contenido-title-description p {
+    width: 100%;
+  }
+
+  .cards-contenido-products {
+    flex-direction: column;
+  }
+
+  .cards-contenido-products h3 {
+    width: 80%;
+  }
+
+  .cards-contenido-products p {
+    width: 120%;
+  }
+
+  .contact {
+    flex-direction: column;
+    margin-left: 45px;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .contact-info {
+    gap: 40px;
+  }
+
+  .contact-info h2 {
+    text-align: center;
+  }
+
+  .contact-info-people {
+    flex-direction: column;
+  }
+
+  hr {
+    width: 490px;
+  }
+
+  .logo-footer {
+    margin-left: 50px;
+  }
+
+  .logo-footer img {
+    width: 15%;
+  }
+
+  .logo-footer p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    width: 200px;
+  }
+}
+
+/* TERMINADO 320 */
+
+@media (max-width: 320px) {
+  body {
+    width: 100vw;
+  }
+
+  .hero {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 220px;
+  }
+
+  .thg {
+    width: 400px;
+  }
+
+  .about {
+    margin-left: 220px;
+    width: 150%;
+  }
+
+  .cards {
+    margin-left: 220px;
+    width: 200%;
+  }
+
+  .cards-contenido p {
+    text-align: justify;
+    width: 70%;
+  }
+
+  .cards-contenido-products {
+    flex-direction: column;
+  }
+
+  .cards-contenido-products p {
+    width: 80%;
+  }
+
+  .contact {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 200px;
+    gap: 50px;
+  }
+  .contact-info h2 {
+    text-align: center;
+  }
+
+  .people h3 {
+    text-align: center;
+  }
+
+  .sinsajos {
+    height: 350px;
+  }
+
+  hr {
+    width: 560px;
+  }
+  .logo-footer {
+    margin-left: 250px;
+  }
+
+  .logo-footer img {
+    width: 50%;
+  }
+
+  .logo-footer p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    width: 200px;
+  }
+}
