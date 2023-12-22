@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los Juegos del Hambre</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="/assets/style.css" />
     <link rel="stylesheet" href="/assets/mqueries.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.ico" />
@@ -28,16 +32,20 @@
         alt="Sinsajo en círculo"
       />
       <nav>
+        <label for="menu-toggle" class="menu-toggle"
+          ><i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="nav-list">
-          <li><a href="#" class="nav-links">inicio</a></li>
-          <li><a href="#" class="nav-links">acerca de</a></li>
-          <li><a href="#" class="nav-links">contenido</a></li>
-          <li><a href="#" class="nav-links">contacto</a></li>
+          <li><a href="#inicio" class="nav-links">inicio</a></li>
+          <li><a href="#acerca-de" class="nav-links">acerca de</a></li>
+          <li><a href="#contenido" class="nav-links">contenido</a></li>
+          <li><a href="#contacto" class="nav-links">contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="inicio">
         <div class="hero-presentation">
           <h1>"May the odds <span>be ever in your favor"</span></h1>
           <p>
@@ -56,7 +64,7 @@
           class="thg"
         />
       </section>
-      <section class="about">
+      <section class="about" id="acerca-de">
         <p>
           <span class="title">Los Juegos del Hambre</span> es una novela
           distópica escrita por Suzanne Collins. Se trata de un evento anual en
@@ -66,7 +74,7 @@
           y una casa para ellos y sus familiares.
         </p>
       </section>
-      <section class="cards">
+      <section class="cards" id="contenido">
         <div class="cards-contenido">
           <div class="cards-contenido-title-description">
             <h2>Contenido</h2>
@@ -107,7 +115,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contacto">
         <div class="contact-info">
           <h2>Contacto</h2>
           <div class="contact-info-people">

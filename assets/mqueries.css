@@ -1,8 +1,9 @@
-/* TERMINADO 1024 */
-
 @media (max-width: 1024px) {
+  /* Condicional: Valor máximo que tiene que tener la viewport para que se aplique los estilos dentro del media query. */
   .hero {
     flex-direction: column;
+    padding-bottom: 50px;
+    margin-top: 40px;
   }
 
   .hero-buttons {
@@ -15,10 +16,16 @@
 
   .about {
     width: 80%;
+    padding-bottom: 50px;
+  }
+
+  .cards {
+    width: 100%;
   }
 
   .cards-contenido-products {
     flex-direction: column;
+    width: 100%;
   }
 
   .cards-contenido-products h3 {
@@ -40,13 +47,44 @@
   .contact-info-people {
     flex-direction: column;
   }
+
+  .logo-footer img {
+    width: 5%;
+  }
 }
 
-/* TERMINADO 1024 */
-
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    /* Alto del header */
+    right: 0;
+    background-color: var(--bg-dark-gray);
+    width: 50%;
+    padding: 20px;
+    border: 2px solid var(--bg-gold);
+    border-top: none;
+    /* Cascada: después de darle todos los bordes, saco el de arriba */
+    border-radius: 0 0 20px 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    /* Para que no esté siempre visible */
+  }
+
+  #menu-toggle:checked ~ .nav-list {
+    display: flex;
+  }
+
   .hero {
     flex-direction: column;
+    padding-bottom: 50px;
+    margin-top: 30px;
   }
 
   .hero-buttons {
@@ -58,9 +96,12 @@
   }
 
   .about {
-    width: 100%;
-    padding: 0 40px;
+    width: 80%;
+    padding-bottom: 50px;
     text-align: justify;
+  }
+  .cards {
+    padding-bottom: 50px;
   }
 
   .cards-contenido-products {
@@ -73,14 +114,26 @@
 
   .contact {
     width: 100%;
-    padding: 40px 0 40px 40px;
+    padding: 50px 0 50px 40px;
+  }
+
+  .logo-footer img {
+    width: 5%;
+  }
+
+  .logo-footer p {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    width: 200px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .hero {
     flex-direction: column;
-    margin-left: 45px;
+    padding-bottom: 10px;
+    margin-top: 20px;
   }
 
   .hero-buttons {
@@ -88,7 +141,7 @@
   }
 
   .thg {
-    width: 450px;
+    width: 400px;
   }
 
   .hero-presentation {
@@ -97,11 +150,7 @@
 
   .about {
     width: 90%;
-    margin-left: 50px;
-  }
-
-  .cards {
-    margin-left: 50px;
+    padding: 30px 30px 20px 30px;
   }
 
   .cards-contenido-title-description p {
@@ -120,9 +169,12 @@
     width: 120%;
   }
 
+  .music span {
+    text-align: center;
+  }
+
   .contact {
     flex-direction: column;
-    margin-left: 45px;
     width: 100%;
     gap: 50px;
   }
@@ -137,54 +189,51 @@
 
   .contact-info-people {
     flex-direction: column;
+    align-items: center;
   }
 
   hr {
-    width: 490px;
-  }
-
-  .logo-footer {
-    margin-left: 50px;
+    width: 600px;
   }
 
   .logo-footer img {
-    width: 15%;
+    width: 5%;
   }
 
   .logo-footer p {
     text-align: center;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 11px;
+    font-weight: 600;
     width: 200px;
   }
 }
 
-/* TERMINADO 320 */
-
 @media (max-width: 320px) {
   body {
-    width: 100vw;
+    width: 100%;
   }
 
   .hero {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-left: 220px;
+    padding-bottom: 20px;
+    margin-top: 20px;
   }
 
   .thg {
-    width: 400px;
+    width: 300px;
   }
 
   .about {
-    margin-left: 220px;
-    width: 150%;
+    width: 90%;
+    font-size: 15px;
+    padding-bottom: 10px;
   }
 
   .cards {
-    margin-left: 220px;
-    width: 200%;
+    width: 150%;
+    padding-bottom: 20px;
   }
 
   .cards-contenido p {
@@ -203,8 +252,8 @@
   .contact {
     flex-direction: column;
     width: 100%;
-    margin-left: 200px;
     gap: 50px;
+    margin-right: 40px;
   }
   .contact-info h2 {
     text-align: center;
@@ -221,17 +270,14 @@
   hr {
     width: 560px;
   }
-  .logo-footer {
-    margin-left: 250px;
-  }
 
   .logo-footer img {
-    width: 50%;
+    width: 10%;
   }
 
   .logo-footer p {
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     width: 200px;
   }
