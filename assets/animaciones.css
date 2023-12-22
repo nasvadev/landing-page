@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+  /* Altura del header */
+}
+
+.overlay {
+  position: absolute;
+  /* Para que se posicione absolutamente y ocupe toda la pantalla */
+  top: 60px;
+  /* Altura del header que no se ve afectado por el overlay */
+  left: 0;
+  height: 100vh;
+  /* vh: Que ocupe toda la pantalla */
+  width: 100%;
+  display: none;
+  /* Para que no aparezca blureado siempre */
+  z-index: 10;
+  /* Para que quede "detrás" del menú desplegable. Al "nav-list" hay que darle un z-index mayor */
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 var(--bg-dark-red, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+#menu-toggle:checked ~ .overlay {
+  display: block;
+}
+/* Para que el fondo se bluree cuando se abre el menú desplegable */
+
+.nav-links {
+  position: relative;
+  /* Para que funcione la animación */
+}
+
+.nav-list li {
+  position: relative;
+  /* Para que funcione la animación */
+}
+
+.nav-links::after {
+  content: "";
+  /* Para que funcione el after/before, siempre tiene que tener la propiedad "content" aunque esté vacía (solo la línea) */
+  height: 1.5px;
+  width: 100%;
+  background-color: var(--font-white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  /* Para que no sea visible siempre */
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+  /* Para transicionar la propiedad "transform" */
+}
+
+.nav-links:hover::after {
+  /* Para que se aplique al pasarle el mouse por encima */
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  animation: fade 2.2s ease-in, slide-up 2s ease-in-out;
+}
+
+.sinsajos {
+  position: relative;
+  animation: slide-up 6s ease-in-out infinite;
+}

@@ -73,6 +73,8 @@ nav i {
 .nav-list {
   display: flex;
   gap: 50px;
+  z-index: 20;
+  /* El "overlay" tiene un z-index menor para que se bluree cuando se despliega el menú */
 }
 
 .nav-links {
@@ -372,9 +374,4 @@ hr {
 .logo-footer p {
   font-size: 10px;
   font-weight: 550;
-}
-
-html{
-  scroll-behavior: smooth;
-  scroll-padding-top: 60px;
-};;
+};;;;;;;;;;
